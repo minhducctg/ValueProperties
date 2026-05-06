@@ -595,8 +595,16 @@ def parse_gia_trieu(s: str) -> float:
 
 def parse_dien_tich_m2(s: str) -> float:
     try:
-        m = re.search(r'(\d+(?:[.,]\d+)?)', str(s))
-        return float(m.group(1).replace(',', '.')) if m else 0.0
+        m = re.search(r'([\d.,]+)', str(s))
+        if not m:
+            return 0.0
+        num = m.group(1)
+        # "1,234" hoặc "1.234" (dấu phân nghìn) → bỏ dấu
+        if re.match(r'^\d{1,3}[.,]\d{3}$', num):
+            num = num.replace(',', '').replace('.', '')
+        else:
+            num = num.replace(',', '.')
+        return float(num)
     except (ValueError, AttributeError):
         return 0.0
 
