@@ -594,8 +594,11 @@ def parse_gia_trieu(s: str) -> float:
     return 0.0
 
 def parse_dien_tich_m2(s: str) -> float:
-    m = re.search(r'([\d.,]+)', s.replace(',', '.'))
-    return float(m.group(1)) if m else 0.0
+    try:
+        m = re.search(r'(\d+(?:[.,]\d+)?)', str(s))
+        return float(m.group(1).replace(',', '.')) if m else 0.0
+    except (ValueError, AttributeError):
+        return 0.0
 
 def tinh_toan(df: pd.DataFrame) -> pd.DataFrame:
     gia_nha_col, don_gia_col = [], []
