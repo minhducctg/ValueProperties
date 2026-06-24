@@ -663,7 +663,7 @@ Tra cứu giá bất động sản từ 3 trang: **alonhadat.com.vn**, **batdong
 Tìm kiếm trên Google theo cú pháp:
 > `site:batdongsan.com.vn bán nhà [tên khu vực]`
 
-Ví dụ: `site:batdongsan.com.vn bán nhà quận 7 tp hcm`
+Ví dụ: `site:batdongsan.com.vn bán nhà KĐT Gamuda Garden Hoàng Mai Hà Nội`
 
 Hoặc vào trực tiếp trang web → tìm kiếm theo khu vực → copy URL trên thanh địa chỉ trình duyệt.
 
