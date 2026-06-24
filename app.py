@@ -721,7 +721,7 @@ with tab_main:
 
     def _show_results(df):
         st.success(f"Tổng cộng {len(df)} bài đăng")
-        show_cols = ["nguon", "tieu_de", "gia", "dien_tich", "dia_chi",
+        show_cols = ["Nguồn", "tieu_de", "gia", "dien_tich", "dia_chi",
                      "loai_duong", "gia_nha (tr)", "don_gia_dat (tr/m²)"]
         show_cols = [c for c in show_cols if c in df.columns]
         styler = df[show_cols].style
