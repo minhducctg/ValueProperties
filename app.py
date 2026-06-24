@@ -642,7 +642,7 @@ def to_excel(df: pd.DataFrame) -> bytes:
     return buf.getvalue()
 
 # ─── Streamlit UI ─────────────────────────────────────────────────────────────
-st.set_page_config(page_title="BDS Scraper", layout="wide", page_icon="🏠")
+st.set_page_config(page_title="CN136", layout="wide", page_icon="🏠")
 st.title("🏠 Công cụ Tra cứu giá BĐS - CN Hoàng Mai")
 
 tab_main, tab_guide = st.tabs(["🔍 Tra cứu", "📖 Hướng dẫn"])
@@ -755,7 +755,7 @@ with tab_main:
             def run_scrape(nguon, url, scrape_fn, *args):
                 if not url:
                     return
-                st.write(f"📥 Đang scrape {nguon}…")
+                st.write(f"📥 Đang quét {nguon}…")
                 with _scrape_lock:
                     try:
                         rows = scrape_fn(*args)
