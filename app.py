@@ -709,7 +709,7 @@ with tab_main:
     with col3:
         url_mb  = st.text_input("muaban.net", placeholder="https://muaban.net/...")
 
-    num_pages = st.slider("Số trang cần scrape", 1, 20, 3)
+    num_pages = st.slider("Số trang cần Quét dữ liệu", 1, 20, 3)
     cloud_mode = st.toggle(
         "☁️ Chế độ Cloud (tắt khi chạy local để giải CAPTCHA alonhadat)",
         value=True,
@@ -740,7 +740,7 @@ with tab_main:
     if st.session_state.df_result is not None:
         _show_results(st.session_state.df_result)
 
-    if st.button("🚀 Scrape", use_container_width=True):
+    if st.button("🚀 Quét dữ liệu", use_container_width=True):
         if not any([url_aln, url_bds, url_mb]):
             st.warning("Vui lòng dán ít nhất 1 link.")
         else:
