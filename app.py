@@ -685,7 +685,7 @@ Mặc định 3 trang ≈ 60 tin. Tăng lên nếu cần nhiều mẫu hơn.
 |---|---|
 | `gia` | Giá rao bán |
 | `dien_tich` | Diện tích đất |
-| `loai_duong` | Mặt tiền / hẻm |
+| `loai_duong` | Mặt tiền / ngõ |
 | `gia_nha (tr)` | Giá trị phần nhà (số tầng × diện tích × 5 tr/m²) |
 | `don_gia_dat (tr/m²)` | Đơn giá đất sau khi trừ giá nhà |
 
