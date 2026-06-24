@@ -675,7 +675,7 @@ Dán link vào ô tương ứng (alonhadat / batdongsan / muaban).
 
 Mặc định 3 trang ≈ 60 tin. Tăng lên nếu cần nhiều mẫu hơn.
 
-**Bước 4 — Nhấn Scrape**
+**Bước 4 — Nhấn 🚀 Quét dữ liệu**
 
 ---
 
