@@ -5,7 +5,7 @@ if "password_guessed" not in st.session_state:
     st.session_state["password_guessed"] = False
 
 if not st.session_state["password_guessed"]:
-    st.title("🔒 HỆ THỐNG NỘI BỘ - VIETINBANK")
+    st.title("🔒 VIETINBANK HOÀNG MAI - HỆ THỐNG TRA CỨU GIÁ TSBĐ")
     password = st.text_input("Vui lòng nhập mật khẩu chi nhánh để sử dụng ứng dụng:", type="password")
     if st.button("Đăng nhập"):
         if password == st.secrets["PASSWORD_LOG"]:
