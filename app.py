@@ -643,7 +643,7 @@ def to_excel(df: pd.DataFrame) -> bytes:
 
 # ─── Streamlit UI ─────────────────────────────────────────────────────────────
 st.set_page_config(page_title="BDS Scraper", layout="wide", page_icon="🏠")
-st.title("🏠 BDS Scraper")
+st.title("🏠 Công cụ Tra cứu giá BĐS - CN Hoàng Mai")
 
 tab_main, tab_guide = st.tabs(["🔍 Tra cứu", "📖 Hướng dẫn"])
 
